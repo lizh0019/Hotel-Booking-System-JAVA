@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="src" size="4388,2390" id="" metadata="uml2-1.0" initialized="true" zoom="0.25" tag="1000" key="32303037303533312D3130303020486F74656C426F6F6B696E6753797374656D2F5049204B45">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="Address" location="1383,50" size="122,265" id="Core/Address" runTimeClassModel="street,postCode,getAddress(),Address(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),toString(),country">
+    <children xsi:type="editmodel:CompartmentEditModel" size="99,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="country" id="Core/Address#country"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="postCode" id="Core/Address#postCode"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="street" id="Core/Address#street"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="91,162">
+      <children xsi:type="editmodel:MethodEditModel" name="Address" id="Core/Address#Address(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAddress" id="Core/Address#getAddress()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="Core/Address#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="HotelBookingSystem" location="927,972" size="173,243" id="Core/HotelBookingSystem" runTimeClassModel="getMatchedHotels(),addSelectedHotel(I),search(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),search(Ljava.lang.String;),getAllHotels(),getSelectedHotel(),getAllTypes(),getAllCountries(),HotelBookingSystem(),removeSelectedHotel(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,180">
+      <children xsi:type="editmodel:MethodEditModel" name="HotelBookingSystem" id="Core/HotelBookingSystem#HotelBookingSystem()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addSelectedHotel" id="Core/HotelBookingSystem#addSelectedHotel(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAllCountries" id="Core/HotelBookingSystem#getAllCountries()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAllHotels" id="Core/HotelBookingSystem#getAllHotels()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAllTypes" id="Core/HotelBookingSystem#getAllTypes()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMatchedHotels" id="Core/HotelBookingSystem#getMatchedHotels()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSelectedHotel" id="Core/HotelBookingSystem#getSelectedHotel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeSelectedHotel" id="Core/HotelBookingSystem#removeSelectedHotel(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="search" id="Core/HotelBookingSystem#search(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="search" id="Core/HotelBookingSystem#search(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="Core/HotelBookingSystem-Standard::Call->Core/Customer*Core/HotelBookingSystem-Standard::Instantiate->Core/Customer*Core/HotelBookingSystem-Soyatec::Import->Core/Customer" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import, Call»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="57,243" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="153,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="Core/HotelBookingSystem-Standard::Instantiate->Core/Address*Core/HotelBookingSystem-Soyatec::Import->Core/Address" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="96,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="143,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,261"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="Core/Customer@customer+Core/HotelBookingSystem@" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,243" id="Core/Customer@customer+Core/HotelBookingSystem@|Core/HotelBookingSystem#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="customer" location="177,26" id="Core/Customer@customer+Core/HotelBookingSystem@|Core/Customer#customer" multiplicityLabel="//@children.1/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - customer" location="875,1847" size="55,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="875,1819" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.1/@sourceConnections.2" name="Customer" location="691,1817" size="177,553" id="Core/Customer" runTimeClassModel="cancelBooking(),displayCustomerInfo(),displayBookingInfo(),custID,street,postCode,isBookingCanceled,clearSelectedRoom(),removeSelectedRoom(LCore.Room;),country,getSelectedRoom(),identity,email,pay(),name,gender,contactNo,addSelecteddRoom(LCore.Room;),getSStreet()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="154,180">
+      <children xsi:type="editmodel:AttributeEditModel" name="contactNo" id="Core/Customer#contactNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="country" id="Core/Customer#country"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="custID" id="Core/Customer#custID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="email" id="Core/Customer#email"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gender" id="Core/Customer#gender"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="identity" id="Core/Customer#identity"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="Core/Customer#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="postCode" id="Core/Customer#postCode"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="street" id="Core/Customer#street"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="isBookingCanceled" id="Core/Customer#isBookingCanceled"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="135,324">
+      <children xsi:type="editmodel:MethodEditModel" name="addSelecteddRoom" id="Core/Customer#addSelecteddRoom(LCore.Room;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="clearSelectedRoom" id="Core/Customer#clearSelectedRoom()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSStreet" id="Core/Customer#getSStreet()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSelectedRoom" id="Core/Customer#getSelectedRoom()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="pay" id="Core/Customer#pay()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeSelectedRoom" id="Core/Customer#removeSelectedRoom(LCore.Room;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="cancelBooking" id="Core/Customer#cancelBooking()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayCustomerInfo" id="Core/Customer#displayCustomerInfo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayBookingInfo" id="Core/Customer#displayBookingInfo()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
